@@ -35,8 +35,6 @@ jobs:
         with:
           context: frontend
           push: true
-          build-args: |
-            REACT_APP_API_BASE_URL=${{ secrets.API_BASE_URL }}
           tags: |
             ${{ steps.ecr.outputs.registry }}/${{ env.ECR_REPOSITORY }}:${{ github.sha }}
             ${{ steps.ecr.outputs.registry }}/${{ env.ECR_REPOSITORY }}:latest
