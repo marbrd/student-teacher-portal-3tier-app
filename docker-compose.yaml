@@ -27,11 +27,7 @@ services:
         condition: service_healthy
 
   frontend:
-    build:
-      context: ./frontend
-      args:
-        # The React app runs in YOUR browser, so it calls the backend via localhost
-        REACT_APP_API_BASE_URL: http://localhost:3500
+    build: ./frontend
     ports:
       - "8080:80"
     depends_on:
