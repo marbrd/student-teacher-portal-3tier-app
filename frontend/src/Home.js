@@ -9,11 +9,11 @@ function Home() {
   return (
     <Box py={16} textAlign="center">
       <Helmet>
-        <title>Home • Student–Teacher Portal</title>
+        <title>Home • Student–Teacher Portal V2</title>
         <meta name="description" content="Welcome to the Student–Teacher Portal" />
       </Helmet>
       <VStack spacing={6}>
-        <Heading size="2xl">Welcome to Student–Teacher Portal</Heading>
+        <Heading size="2xl">Welcome to Student–Teacher Portal V2</Heading>
         <Text color="gray.600" _dark={{ color: 'gray.300' }}>
           Choose your role to continue
         </Text>
