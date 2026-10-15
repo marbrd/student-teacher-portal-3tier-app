@@ -13,6 +13,8 @@ permissions:
 env:
   AWS_REGION: us-east-1
   ECR_REPOSITORY: project-ecs-3tiers-frontend
+  ECS_CLUSTER: project-ecs-3tiers-cluster
+  ECS_SERVICE: frontend
 
 jobs:
   build-push:

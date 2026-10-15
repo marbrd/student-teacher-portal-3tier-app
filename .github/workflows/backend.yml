@@ -13,6 +13,8 @@ permissions:
 env:
   AWS_REGION: us-east-1
   ECR_REPOSITORY: project-ecs-3tiers-backend
+  ECS_CLUSTER: project-ecs-3tiers-cluster
+  ECS_SERVICE: backend
 
 jobs:
   build-push:
@@ -38,7 +40,7 @@ jobs:
           tags: |
             ${{ steps.ecr.outputs.registry }}/${{ env.ECR_REPOSITORY }}:${{ github.sha }}
             ${{ steps.ecr.outputs.registry }}/${{ env.ECR_REPOSITORY }}:latest
-            
+
       - name: Deploy to ECS
         run: |
           aws ecs update-service \
