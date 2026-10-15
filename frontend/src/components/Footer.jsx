@@ -6,7 +6,7 @@ export default function Footer() {
   const socialLinks = [
     {
       name: "GitHub",
-      href: "https://github.com/AmanPathak-DevOps/",
+      href: "https://github.com/marbrd",
       svg: (
         <path
           fill="currentColor"
@@ -34,7 +34,7 @@ export default function Footer() {
     },
     {
       name: "LinkedIn",
-      href: "https://www.linkedin.com/in/aman-devops/",
+      href: "https://www.linkedin.com/in/marouane-berrad/",
       svg: (
         <path
           fill="currentColor"
@@ -46,45 +46,13 @@ export default function Footer() {
         />
       ),
     },
-    {
-      name: "YouTube",
-      href: "https://www.youtube.com/@aman-pathak",
-      svg: (
-        <path
-          fill="currentColor"
-          d="M19.6 3H4.4C2 3 0 5 0 7.4v9.2C0 19 
-             2 21 4.4 21h15.2C22 21 24 19 24 
-             16.6V7.4C24 5 22 3 19.6 3zM9.6 16V8l6.4 4-6.4 4z"
-        />
-      ),
-    },
-    {
-      name: "Medium",
-      href: "https://medium.com/@amanpathakdevops",
-      svg: (
-        <path
-          fill="currentColor"
-          d="M0 3v18h24V3H0zm6.7 12.1V8.4l5.3 
-             3.9-5.3 2.8zm7.3.1l-5.9-3.4 5.9-4.2v7.6zm2 
-             .2V8.2l4 3.1-4 4.1z"
-        />
-      ),
-    },
   ];
 
   return (
     <Box as="footer" mt="auto" py={6} bg="white" _dark={{ bg: "gray.800" }}>
       <HStack spacing={6} maxW="6xl" mx="auto" px={4} justify="space-between">
         <Text fontSize="sm">
-          © {new Date().getFullYear()} Student–Teacher Portal • Built by{" "}
-          <Link
-            href="https://github.com/AmanPathak-DevOps/"
-            isExternal
-            color="blue.500"
-            fontWeight="semibold"
-          >
-            Aman Pathak
-          </Link>
+          © {new Date().getFullYear()} Student–Teacher Portal
         </Text>
         <HStack spacing={3}>
           {socialLinks.map(({ name, href, svg }) => (
